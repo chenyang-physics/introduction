@@ -134,6 +134,11 @@
             padding-bottom: 10px;
         }
 
+        .contact-line {
+            display: flex;
+            align-items: center;
+        }
+
         .links-list {
             list-style: none;
             padding: 0;
@@ -145,6 +150,22 @@
             font-size: 0.95rem;
         }
 
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #b07fc7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            margin-left: auto;
+        }
+        .btn:hover {
+        background-color: #7d0b6e;
+        }
+
         footer {
             margin-top: 80px;
             text-align: center;
@@ -154,22 +175,6 @@
             border-top: 1px solid rgba(69, 162, 158, 0.2);
             padding-top: 20px;
         }
-        
-        /* 按钮样式 */
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: rgba(31, 40, 51, 0.7);
-            color: #c5c6c7;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #45a29e;
-        }
-
         
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -187,13 +192,13 @@
         <header>
             <h1>Chen YANG 杨宸</h1>
             <p class="subtitle">Theoretical Physicist | High-Energy Cosmology</p>
-            <p>
+            <p class="contact-line">
                 <!-- 链接到你的学术主页或邮箱 -->
                 <a href="mailto:chen.yang@sns.it">Email</a> &nbsp;|&nbsp; 
                 <a href="https://inspirehep.net/authors/2170475" target="_blank">inSPIRE HEP</a> &nbsp;|&nbsp; 
                 <a href="https://www.researchgate.net/profile/Chen-Yang-233" target="_blank">ResearchGate</a>
+                <a href="cards/dark_walker_card.html" class="btn" >Fun Cards</a>
             </p>
-            <a href="cards/dark_walker_card.html" class="btn" style="position: absolute; top: 200px; right: 50px;">Fun Cards</a>
         </header>
 
         <!-- 简介区 -->
